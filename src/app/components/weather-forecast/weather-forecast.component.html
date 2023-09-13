@@ -1,0 +1,6 @@
+<input [formControl]="search" type="text">
+<div [style.visibility]="(isNotFound$ | async) ? 'visible' : 'hidden'"
+     [style.color]="'red'"
+     >Cities not found</div>
+
+<app-weather-table *ngIf="weatherForecastService.data$ | async as data" [values]="data"></app-weather-table>

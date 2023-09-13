@@ -1,0 +1,12 @@
+<ul class="data-types">
+  <li *ngFor="let type of dataTypes"
+      class="data-type"
+      [class.data-type--active]="dataType === type"
+      (click)="changeDataType(type)"
+  >{{type}}</li>
+</ul>
+
+<app-table
+    [values]="values | mapToArray | rewriteAsObjectByType:dataType"
+    [columns]="columns"
+></app-table>

@@ -1,0 +1,10 @@
+<table>
+    <thead>
+        <th *ngFor="let column of columns">{{column.name}}</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let value of values">
+            <td *ngFor="let column of columns">{{value?.[column.id]?.toString() | titlecase}}</td>
+        </tr>
+    </tbody>
+</table>

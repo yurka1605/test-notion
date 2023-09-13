@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  color: inherit;
+  fill: inherit;
+  border: 1px solid rgb(233, 233, 231);
+  position: relative;
+  vertical-align: top;
+  text-align: start;
+  min-width: 120px;
+  max-width: 240px;
+  min-height: 32px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  caret-color: rgb(55, 53, 47);
+  padding: 7px 9px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 20px;
+}
